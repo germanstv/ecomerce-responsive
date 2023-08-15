@@ -1,148 +1,148 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-nav, .left{
+nav,
+.left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+}
+
+.burger-icon {
+  display: none;
+}
+
+nav {
+  font-family: "inter", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  margin-top: 32px;
+  margin-left: 5%;
+  width: 1188px;
+  height: 45px;
+  border-radius: 8px;
+  margin-bottom: 64px;
+}
+
+.left {
+  gap: 20px;
+}
+
+main {
+  background-image: url(../images/Fondo\ portada.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 1097.5px;
+  height: 491px;
+  position: relative;
+  margin-left: 5%;
+  border-radius: 10px;
+  box-shadow: 0px 10px 20px rgb(0, 0, 0);
+}
+
+h1 {
+  font-family: "inter", sans-serif;
+  font-weight: 400;
+  font-size: 89.8px;
+  position: absolute;
+  top: 44px;
+  left: 33px;
+  z-index: 2;
+}
+
+h4 {
+  display: none;
+}
+
+span {
+  color: #ffffff;
+}
+
+.product {
+  position: absolute;
+  left: 638px;
+  width: 340px;
+  height: 400px;
+  border-radius: 8px;
+  box-shadow: 0px 10px 20px rgb(0, 0, 0);
+}
+
+button {
+  background: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  cursor: pointer;
+  font-size: 32px;
+  font-weight: 600;
+  font-family: "poppins", sans-serif;
+  margin-top: 376px;
+  margin-left: 31px;
+  transition: 0.3s;
+}
+
+button:hover {
+  color: aliceblue;
+}
+
+@media screen and (max-width: 500px) {
+  nav {
+    width: 343px;
+    height: 29px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 5px;
-}
+    margin-left: 5%;
+  }
 
-.burger-icon{
+  nav p,
+  .carrito {
     display: none;
-}
+  }
 
-nav{
-    font-family: 'inter', sans-serif;
-    font-size: 24px;
-    font-weight: 400;
-    margin-top: 32px;
-    margin-left: 117px;
-    width: 1188px;
-    background-color: rgba(44, 43, 43, 0.075);
-    height: 45px;
-    border-radius: 8px;
-    margin-bottom: 64px;
-}
+  .left {
+    display: none;
+  }
 
-.left{
-    gap: 20px;
-}
+  .burger-icon {
+    display: block;
+  }
 
-main{
-    background-image: url(../images/Fondo\ portada.jpg);
-    background-size:100%;
+  main {
+    width: 342px;
+    height: 380px;
+    margin-left: 5%;
+    background-size: cover;
     background-repeat: no-repeat;
-    width: 1097.5px;
-    height: 491px;
-    position: relative;
-    margin-left: 117px;
-    border-radius: 10px;
-    box-shadow: 0px 10px 20px rgb(0, 0, 0);
+  }
 
-}
+  .product {
+    left: 12px;
+    width: 246px;
+    height: 300px;
+  }
 
-h1{
-    font-family: 'inter', sans-serif;
-    font-weight: 400;
-    font-size: 89.8px;
-    position: absolute;
-    top: 44px;
-    left: 33px;
-    z-index: 2;
-}
-
-h4{
+  h1 {
     display: none;
-}
+  }
 
-span{
-    color: #FFFFFF;
-}
-
-.product{
+  h4 {
+    display: block;
     position: absolute;
-    left: 638px;
-    width: 340px;
-    height: 400px;
-    border-radius: 8px;
-    box-shadow: 0px 10px 20px rgb(0, 0, 0);
-}
+    z-index: 2;
+    top: 45px;
+    left: 23px;
+    font-size: 30px;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    letter-spacing: 19px;
+  }
 
-button{
-    background: transparent;
-    border: none;
-    display: flex;
-    align-items: center;
-    position: absolute;
-    cursor: pointer;
-    font-size: 32px;
-    font-weight: 600;
-    font-family: 'poppins', sans-serif;
-    margin-top: 376px;
-    margin-left: 31px;
-    transition: 0.3s;
-}
-
-button:hover{
-    color: aliceblue;
-}
-
-@media screen and (max-width: 500px){
-    nav{
-        width: 343px;
-        height: 29px;
-        display: flex;
-        align-items: center;
-        margin-left: 5%;
-    }
-
-    nav p, .carrito{
-        display: none;
-    }
-
-    .left{
-        display: none;
-    }
-
-    .burger-icon{
-        display: block;
-    }
-
-    main{
-        width: 342px;
-        height: 380px;
-        margin-left: 5%;
-        background-size:cover;
-        background-repeat: no-repeat;
-    }
-
-    .product{
-        left: 12px;
-        width: 246px;
-        height: 300px;
-    }
-
-    h1{
-        display: none;
-    }
-
-    h4{
-        display: block;
-        position: absolute;
-        z-index: 2;
-        top: 45px;
-        left: 23px;
-        font-size: 30px;
-        font-family: 'Inter', sans-serif;
-        font-weight: 700;
-        letter-spacing: 19px;
-    }
-
-    button{
-        top: -54px;
-        left: 25px;
-    }
+  button {
+    top: -54px;
+    left: 25px;
+  }
 }

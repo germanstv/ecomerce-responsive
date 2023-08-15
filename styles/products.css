@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  font-family: "inter", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  margin-top: 32px;
+  margin-left: 5%;
+  width: 1188px;
+  height: 45px;
+  border-radius: 8px;
+  margin-bottom: 64px;
+}
+
+nav,
+.left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+}
+
+.left {
+  gap: 20px;
+}
+
+.burger-icon {
+  display: none;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(4, 19.1pc);
+  width: 1202px;
+  height: 600px;
+  margin-left: 5%;
+}
+
+.card {
+  background-image: url(../images/burger.jpeg);
+  background-size: cover;
+  width: 276px;
+  height: 330px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 46px;
+}
+
+.info-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  background-color: rgba(240, 248, 255, 0.638);
+  width: 256px;
+  height: 73px;
+  border-radius: 8px;
+  margin-top: 245px;
+}
+
+h4 {
+  font-family: "Poppins", sans-serif;
+  font-size: 22px;
+}
+
+.np p {
+  font-family: sans-serif;
+}
+
+@media screen and (max-width: 500px) {
+  .cards-container {
+    grid-template-columns: repeat(1, 1pc);
+  }
+
+  .left,
+  .carrito {
+    display: none;
+  }
+
+  .burger-icon {
+    display: block;
+  }
+
+  nav {
+    width: 270px;
+  }
+}
