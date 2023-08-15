@@ -24,6 +24,11 @@ nav {
   width: 1188px;
   height: 45px;
   border-radius: 8px;
+}
+
+hr{
+  width: 1200px;
+  margin-left: 5%;
   margin-bottom: 64px;
 }
 
@@ -96,6 +101,10 @@ button:hover {
     display: flex;
     align-items: center;
     margin-left: 5%;
+  }
+
+  hr{
+    width: 342px;
   }
 
   nav p,
